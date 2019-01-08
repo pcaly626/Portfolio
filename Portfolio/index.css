@@ -1,0 +1,24 @@
+img.git{
+    width:40px;
+    height:40px;
+}
+
+img.linkedin{
+    width:40px;
+    height:40px;
+}
+
+.jumbotron {
+    text-align: center;
+    background: none;
+}
+
+.sectionLight {
+    background: #eceeef;
+    padding: 2em;
+}
+
+.sectionDark {
+    background: #ccc;
+    padding: 2em;
+}
