@@ -4,17 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="shortcut icon" type="image/png" href="pictures/logo.png"/>
     <title>Paul Clay</title>
   </head>
   <body>
 <div class="container-fluid">
- <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Welcome</a>
+ <nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img class="logo" src="pictures/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,10 +36,16 @@
           <a class="dropdown-item" href="https://www.linkedin.com/in/paultclay/">LinkedIn</a>
         </div>
       </li>
+        <li class="nav-item contact">
+              <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
     </ul>
   </div>
- </nav>
+    
+          
+</nav>
 </div>
+
  <div class="sectionLight">
      <div class="row">
          <div class="col-sm-12">
@@ -62,15 +68,23 @@
                     <li data-target="#main" data-slide-to="1"></li>
                     <li data-target="#main" data-slide-to="2"></li>
                 </ol>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 style="text-align: center">Projects</h1>
+                </div>    
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <h2 style="text-align: center">Sunny Land</h2>
                     <img class="d-block w-100" src="pictures/sunnyland2.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
+                    <h2 style="text-align: center">Virus Decompiler</h2>
                     <img class="d-block w-100" src="pictures/decompiler.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="pictures/toad.jpg" alt="Third slide">
+                 <h2 style="text-align: center">QueIt</h2>
+                  <img class="d-block w-100" src="pictures/QueIt.png" alt="Third slide">
                 </div>
             </div>
               <a class="carousel-control-prev" href="#main" role="button" data-slide="prev">
@@ -86,11 +100,54 @@
         <div class="col"></div>
      </div>
 </div>
-          
+<div class="sectionLight">
+    <div class="row">
+        <div class="col-sm-12 col-md-2 offset-md-1">
+            <img class="me" src="pictures/me.png" alt="Picture of a Handsome MAN">
+        </div>
+            <div class="col-sm-12 col-md-6 introwrapper">
+                <h1>Who am I?</h1>
+                <p>Glad you asked, I am a software developer living in Austin, Tx. After completing my military service I went to school at Texas State University. My passion is solving algorithms, web development and boardgames.</p>
+                
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    
+    <div class="row">
+            <div class="col-sm-12">
+                <div class="buttonwrapper">
+                    <a href="contact.html"><button type="button" class="btn btn-lg buttonplace">Contact Me</button></a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<footer class="footer bg-inverse">
+    <div class="socialwrapper">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+            </div>
+            <div class="col-sm-12 col-md-4 ">
+                        
+                <a href="https://linkedin.com/in/paultclay">
+                    <i class=" fa fa-linkedin-square fa-3x faviconplace">                    </i>
+                </a>
+                <a href="https://github.com/pcaly626">
+                <i class=" fa fa-github fa-3x faviconplace"></i>
+                </a>
+                    
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>    
+</footer>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+
 </html>

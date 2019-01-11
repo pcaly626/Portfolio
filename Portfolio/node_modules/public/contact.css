@@ -1,0 +1,59 @@
+img.img-fluid,.git,.linkedin {
+    padding: 10px;
+  width:100px;
+    height:100px;
+}
+
+.img-fluid .logo {
+    padding: 10px;
+    width:50%;
+}
+
+.jumbotron {
+    text-align: center;
+    background: none;
+}
+
+.sectionLight {
+    background: #eceeef;
+    padding: 2em;
+}
+
+.sectionDark {
+    background: #ccc;
+    padding: 2em;
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.button-color {   
+    background-color:darkslategrey;
+    color: white;
+}
+
+.leavecomment {
+    padding-top:100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+img.logo {
+    width:40px;
+    height:40px;
+}
+
+i.iconpadding {
+    margin:10px;
+}
+
+
+
+.comment {
+    margin:auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}

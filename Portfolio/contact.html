@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" type="image/png" href="pictures/logo.png"/>
+    <title>Paul Clay</title>
+  </head>
+  <body>
+      
+<div class="container-fluid">
+ <nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+  <a class="navbar-brand" href="./index.html"><img class="logo" src="pictures/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Connect With Me
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://github.com/pcaly626">Github</a>
+          <a class="dropdown-item" href="https://www.linkedin.com/in/paultclay/">LinkedIn</a>
+        </div>
+          
+      </li>
+        <li class="nav-item contact">
+              <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+    </ul>
+  </div>
+     
+ </nav>
+  
+<div class="sectionLight">
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="leavecomment">Leave me a comment and tell me how great I am</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-sm-12 col-md-3 comment">            
+            <form method="POST" action="/register">
+                <h4>Name*:</h4>
+                <input type="text" placeholder="Name">
+                <h4>Email*:</h4>
+                {{msg}}
+                <input type="text" placeholder="Email Address">
+                <h4>Message*:</h4>
+                <textarea rows="4" cols="50"></textarea>
+                    <button type="submit" class="btn btn-lg button-color">Submit</button>          
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<footer class="footer bg-inverse">
+    <div class="containter-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+
+            </div>
+            <div class="col-sm-2">
+                <a href="https://linkedin.com/in/paultclay">
+                    <i class=" fa fa-linkedin-square fa-3x iconpadding">                    </i>
+                </a>
+                <a href="https://github.com/pcaly626">
+                <i class=" fa fa-github fa-3x iconpadding"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+      
+
+      
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
