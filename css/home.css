@@ -9,14 +9,23 @@ html, body {
     margin:0;
 }
 
-.brand, .nav-item {
+.brand, .nav-link {
     text-transform: uppercase;
     color: #303137;
+    font-size: 25px;
+}
+
+.sensei {
+    color: #66b6d3;
 }
 
 .navbar {
     display: flex;
     padding: 10px;
+    max-width: 1140px;
+    width:100%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 .topnav {
     margin: 0;
@@ -25,8 +34,58 @@ html, body {
     list-style:none;
 }
 
-.topnav .nav-item a{
+.topnav a.nav-link{
     text-decoration: none;
     padding-left:20px;
+        font-size: 20px;
+
 }
+.dropdownLink {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+    ul.topnav li.dropdownLink a{
+        text-decoration: none;
+        color:#303137;
+    }
+    ul.topnav li.dropdownLink {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+            text-transform: uppercase;
+    color: #303137;
+    }
+
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 2;
+            text-decoration: none;
+
+    }
+}
+
 
