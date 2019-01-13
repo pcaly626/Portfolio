@@ -1,0 +1,32 @@
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height:20px;
+    font-size: 1rem;
+    color:#303137;
+    margin:0;
+}
+
+.brand, .nav-item {
+    text-transform: uppercase;
+    color: #303137;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+}
+.topnav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style:none;
+}
+
+.topnav .nav-item a{
+    text-decoration: none;
+    padding-left:20px;
+}
+
