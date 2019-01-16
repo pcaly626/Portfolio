@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     
   <link rel="stylesheet" href="css/styles.css">
   <title>Paul Clay</title>
@@ -68,72 +68,26 @@
         </div>
       </div>
     </div>
-    <div class="quote-btn-wrapper">
-      <button class="quote-btn">Get a quote</button>
-    </div>
   </div>
 </section>
 
 <section class="portfolio">
   <div class="container">
     <div class="section-header">
-      <h1 class="header">Previous Works</h1>
+      <h1 class="header">Current Project</h1>
     </div>
     <div class="portfolio-wrapper">
+      
       <div class="portfolio-object">
         <div class="portfolio-box"></div>
-        <h4>Project</h4>
+        <h4>Veve</h4>
         <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
         </div>
       </div>
       <div class="portfolio-object">
         <div class="portfolio-box"></div>
-        <h4>Project</h4>
+        <h4>EveQuest</h4>
         <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
-        </div>
-      </div>
-      <div class="portfolio-object">
-        <div class="portfolio-box"></div>
-        <h4>Project</h4>
-        <div class="portfolio-text">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
         </div>
       </div>
     </div>
@@ -145,10 +99,10 @@
     <div class="section-header">
       <h1>Drop us a line</h1>
     </div>
-    <form action="">
+    <form method="POST" action='/register'>
       <label for="email">*email</label>
       <div class="form-group">
-        <input class="form-control" type="email" id="email">
+        <input name="email" class="form-control" type="text" id="email">
       </div>
       <label for="name">*name</label>
       <div class="form-group">
@@ -159,7 +113,8 @@
         <textarea class="form-control" id="message" rows="6"></textarea>
       </div>
       <div class="submit-btn-wrapper">
-        <button class="quote-btn">Submit</button>
+        <button onclick="toggle()" href="javascript:void(0)" type="submit" class="quote-btn">Submit</button>
+          <p class="lead">Well I have this many people <strong><%= count %></strong> </p>
       </div>
     </form>
   </div>
