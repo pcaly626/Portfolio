@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var mysql = require('mysql');
+var signIn = require('./gitignore/SQLUser');
 
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/"));
@@ -9,17 +10,8 @@ app.listen(8080, function(){
     console.log('App is listening')
 });
 
-
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'Portfolio',
-});
+var connection = mysql.createConnection(signIn);
   
-
-
-
 app.get("/", function(req,res){
     connection.query(q, function(err,results){
         if(err){ 
@@ -31,7 +23,6 @@ app.get("/", function(req,res){
          res.render('index');
     });
 });
-
 
 app.post('/register', function(req,res){
     
@@ -45,10 +36,6 @@ app.post('/register', function(req,res){
  res.redirect("/");
  });
 });
-
-
-
-
 
 function toggleDropdown() {
   let navbarToggle = document.getElementById("navbar-toggle");
