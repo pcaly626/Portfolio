@@ -9,42 +9,42 @@ app.listen(8080, function(){
     console.log('App is listening')
 });
 
-app.set('view engine','ejs');
 
 var connection = mysql.createConnection({
-    host        : 'localhost',
-    user        : 'root',
-    database    : 'Portfolio'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'Portfolio',
 });
-     console.log("FUCK yeah !!!  !!!");
+  
 
 
 
 app.get("/", function(req,res){
-    var q = 'select count(*) as count from email_list';
     connection.query(q, function(err,results){
         if(err){ 
-            console.log("FUCK  !!!  !!!");
             throw err;
+                console.log("Result: " + result);
         }
-     console.log("FUCK yeah !!!  !!!");
 
         var  count = results[0].count;
-         res.render('index',{count});
+         res.render('index');
     });
 });
 
 
 app.post('/register', function(req,res){
- var person = {email: req.body.email};
-    console.log(person);
- connection.query('INSERT INTO email_list SET ?', person, function(err, result) {
+    
+  var sql = "INSERT INTO email_list (email ,name, user_comment) VALUES ?";
+  var values = [
+    [req.body.email, req.body.postername, req.body.message]
+  ];
+ connection.query(sql, [values], function(err, result) {
  console.log(err);
  console.log(result);
  res.redirect("/");
  });
 });
-
 
 
 
@@ -61,4 +61,4 @@ function toggleDropdown() {
 
 function toggle() {
     alert("Thank You!");
-}
+};
