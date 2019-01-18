@@ -12,6 +12,7 @@
 <nav class="navbar">
   <div class="brand">Paul<span class="sensei">Clay</span></div>
   <ul class="topnav" id="navbar-toggle">
+      <li><a class="nav-link" href="docs/PaulClayResume.pdf">Resume</a></li>  
     <li><a class="nav-link" href="#projects">Projects</a></li>
     <li><a class="nav-link" href="#email">Contact</a></li>
     <li class="dropdownLink"><a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
@@ -27,6 +28,7 @@
 
 <section class="services" id="projects">
   <div class="container">
+      <h1 class="section-header">Past Projects</h1>
     <div class="media-object">
       <div class="icon-left">
         <img class="icon" src="pictures/sunnyland2.jpg" alt="graph chart">
@@ -34,9 +36,7 @@
       <div class="blurb-wrapper-right">
         <h3 class="blurb-header">Sunny Land</h3>
         <div class="blurb-info">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-          lacinia congue felis in faucibus.
+          A 2D adventure game developed using Unity and C#. 
         </div>
       </div>
     </div>
@@ -47,9 +47,7 @@
       <div class="blurb-wrapper-left">
         <h3 class="blurb-header">Virus Decompiler</h3>
         <div class="blurb-info">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-          lacinia congue felis in faucibus.
+          This is a console program that takes the binary of a program and creates assembly code from it!
         </div>
       </div>
     </div>
@@ -60,16 +58,14 @@
       <div class="blurb-wrapper-right">
         <h3 class="blurb-header">QueIt</h3>
         <div class="blurb-info">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-          lacinia congue felis in faucibus.
+          Social platform for students that are struggling with STEM course. Post your questions and have fellow students help you.
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="portfolio">
+<!--<section class="portfolio">
   <div class="container">
     <div class="section-header">
       <h1 class="header">Current Project</h1>
@@ -90,12 +86,12 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <section class="contact-container" id="email">
   <div class="container">
     <div class="section-header">
-      <h1>Drop us a line</h1>
+      <h1>Drop me a line</h1>
     </div>
     <form method="POST" action='/register'>
       <label for="email">*email</label>
@@ -112,7 +108,7 @@
       </div>
       <div class="submit-btn-wrapper">
         <button onclick="toggle()" href="javascript:void(0)" type="submit" class="quote-btn">Submit</button>
-          <p class="lead">Well I have this many people <strong><%= count %></strong> </p>
+        
       </div>
     </form>
   </div>

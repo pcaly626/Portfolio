@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var mysql = require('mysql');
-var signIn = require('./gitignore/SQLUser');
+var signIn = require('./.gitignore/SQLUser');
 
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/"));
